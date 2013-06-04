@@ -46,7 +46,7 @@
 
 (defface nummm-face
   '((t :inherit font-lock-warning-face :bold t))
-  "Normal face used in primary mode-line."
+  "Face used in mode-line."
   :group 'nummm-mode)
 
 (defun nummm-find-minor-modes-alist (current-list)
