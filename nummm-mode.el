@@ -36,6 +36,18 @@
 ;; The face can be changed customizing =nummm-face=.
 
 ;;; Code:
+(defgroup nummm-mode nil
+  "Display the number of minor modes instead of their names in Emacs mode-line."
+  :prefix "nummm-mode"
+  :group 'help
+  :link '(url-link "http://github.com/agpchil/nummm-mode"))
+
+(defcustom nummm-format "+%d"
+  "Format of nummm to show in mode line."
+  :type 'string
+  :group 'nummm-mode
+  :safe 'stringp)
+
 (defvar nummm-mode-line-modes-backup nil)
 
 (defvar nummm-minor-modes-names nil)
@@ -84,9 +96,7 @@ Return a parent list that contains the pattern."
 
 (defun nummm-counter ()
   "Build the string to be displayed in `mode-line-modes`."
-  (propertize (concat "+"
-                      (format "%s"
-                              (nummm-count-minor-modes)))
+  (propertize (format nummm-format (nummm-count-minor-modes))
               'face 'nummm-face
               'help-echo (format "%s" nummm-minor-modes-names)))
 
