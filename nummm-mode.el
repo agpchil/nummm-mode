@@ -115,6 +115,7 @@ Return a parent list that contains the pattern."
 (defvar nummm-mode-map (make-keymap)
   "Keymap for nummm-mode.")
 
+;;;###autoload
 (define-minor-mode nummm-mode
   "Display the number of minor modes instead of their names in Emacs mode-line."
   :global t
