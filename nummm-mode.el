@@ -1,4 +1,4 @@
-;;; nummm-mode.el --- NUMeric Minor Modes
+;;; nummm-mode.el --- Display the number of minor modes instead of their names
 
 ;; This file is not part of Emacs
 
