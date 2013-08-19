@@ -1,4 +1,4 @@
-* NUMeric Minor Modes (nummm)
+# Numeric minor modes (nummm)
   Display the number of minor modes instead of their names in Emacs mode-line.
 
   This mode replaces the `minor-mode-alist` in `mode-line-modes` with
@@ -7,7 +7,7 @@
   restored when is turned off.
   The face can be changed customizing `nummm-face`.
 
-* Installation
+## Installation
   It's available on [MELPA](http://melpa.milkbox.net).
   ```
     M-x package-install nummm-mode
