@@ -106,7 +106,8 @@ Return a parent list that contains the pattern."
     (nummm-backup))
   (let ((modes nil))
     (setq modes (nummm-find-minor-modes-alist mode-line-modes))
-    (setf (car modes) nummm-mode-string)))
+    (when modes
+      (setf (car modes) nummm-mode-string))))
 
 (defun nummm-turn-off ()
   "Turn off nummm mode."
