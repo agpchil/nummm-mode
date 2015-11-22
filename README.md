@@ -8,7 +8,7 @@
   The face can be changed customizing `nummm-face`.
 
 ## Installation
-  It's available on [MELPA](http://melpa.milkbox.net).
+  It's available on [MELPA](https://melpa.org/).
   ```
     M-x package-install nummm-mode
     (nummm-mode t)
