@@ -1,3 +1,9 @@
+**DEPRECATED**
+
+This package is deprecated. Do not use it.
+
+Recommended alternative: https://github.com/tarsius/minions
+
 # Numeric minor modes (nummm)
   Display the number of minor modes instead of their names in Emacs mode-line.
 
@@ -8,13 +14,10 @@
   The face can be changed customizing `nummm-face`.
 
 ## Installation
-  It's available on [MELPA](https://melpa.org/).
-  ```
-    M-x package-install nummm-mode
-    (nummm-mode t)
-  ```
 
-  Or you can copy `nummm-mode.el` file in your load path and add the following in your `~/.emacs` startup file:
+  You can download the latest (archived) version at: https://atrebit.org/pub/releases/nummm-mode.tar.gz
+
+  And then copy `nummm-mode.el` file in your load path and add the following in your `~/.emacs` startup file:
   ```lisp
     (require 'nummm-mode)
     (nummm-mode t)
